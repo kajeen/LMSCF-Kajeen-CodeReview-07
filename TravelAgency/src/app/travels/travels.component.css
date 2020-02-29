@@ -1,0 +1,69 @@
+#carsContainer {
+  width: 100% !important;
+
+}
+
+.divCarItem {
+  text-align: left !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+@media screen and (min-width: 700px) {
+  .divCarItem {
+    max-width: 28% !important;
+    max-height: 400px !important;
+  }
+}
+
+.stadt {
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 70% !important;
+}
+
+.divCarsImg {
+  position: relative;
+  bottom: 0 !important;
+}
+
+.carImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.carDetail {
+  color: white;
+  font-size: calc(100vw / 80);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left !important;
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  
+}
+
+.carDetail:hover {
+  opacity: 0.85;
+}
+.farbe{
+  background-color: #1CC4C4;
+}
+
+

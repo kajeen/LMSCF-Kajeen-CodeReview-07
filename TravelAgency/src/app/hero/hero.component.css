@@ -1,0 +1,13 @@
+.myBG{
+    background: url("../../assets/img/hero.jpg") no-repeat;
+    background-size:100%;
+    height:26rem;
+    max-width:initial;
+}
+
+.mytext{
+    text-shadow: 1px 1px 2px black;
+    font-size: 4rem;
+    padding-top: 1rem;
+    
+}

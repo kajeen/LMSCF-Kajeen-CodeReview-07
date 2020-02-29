@@ -1,0 +1,18 @@
+<div class="container-fluid lange">
+  <table>
+    <thead>
+      <tr class="mb-4">
+        <th class="">Image</th>
+        <th class="pl-5">Destination</th>
+        <th class="pl-5">Price</th>
+      </tr>
+    </thead>
+    <tbody class="cart-item" *ngFor="let item of items">
+      <tr class="mb-4">
+        <td><img src="{{ item.img}}" alt="" class="w-50"></td>
+        <td class="pl-5">{{ item.destination}} </td>
+        <td class="pl-5">{{ item.price.toFixed(2)}} €</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

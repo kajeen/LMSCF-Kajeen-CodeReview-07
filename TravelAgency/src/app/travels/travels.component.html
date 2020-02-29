@@ -1,0 +1,33 @@
+<app-form></app-form>
+<div id="carsContainer" class="mt-5 container">
+  <div id="CarItems" class="row alert d-flex justify-content-center">
+    <div class="card divCarItem col-xs-12 col-md-6 col-lg-4 mr-5 mb-5 " *ngFor="let product of products">
+      <div class="divCarsImg">
+        <img class="card-img-bottom carImg" src="{{product.img}}" alt="Card image cap">
+        <div class="carDetail p-2 bg-light text-dark">
+          <div>
+            <span class="font-weight-bold">Destination: </span>
+            {{product.destination}}
+          </div>
+          <div>
+            <span class="font-weight-bold">Desc: </span>
+            {{product.desc}}
+          </div>
+          <div>
+            <span class="font-weight-bold">StartDate: </span>
+            {{product.startDate}}
+          </div>
+          <div>
+            <span class="font-weight-bold">Duration: </span>
+            {{product.duration}}
+          </div>
+          <div>
+            <span class="font-weight-bold">Price: </span>
+            {{product.price}}
+          </div>
+          <button (click)="addToCart(product)" class="farbe">Booking Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
